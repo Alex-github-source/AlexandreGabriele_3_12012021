@@ -1,0 +1,46 @@
+@media (max-width:420px){
+    body,
+    #blocpage,
+    section,
+    .bckgrnd,
+    #restau,
+    footer
+
+    {
+        width:100%;
+    }
+}
+
+@media (min-width:421px) {
+    body,
+    #blocpage,
+    section,
+    .bckgrnd,
+    .restau,
+    footer
+
+    {
+        width:100%;
+    }
+    .intro{
+        p{
+            width: auto;
+        }
+        h2{
+            width: auto;
+        }
+    }
+    #contenairefonction{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .restau{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+            &__card{
+                margin-right: 20px;
+            }
+    }
+}

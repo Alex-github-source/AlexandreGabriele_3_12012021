@@ -1,0 +1,47 @@
+@media (max-width: 420px) {
+  body,
+#blocpage,
+section,
+.imghead,
+#restau,
+footer {
+    width: 100%;
+  }
+}
+@media (min-width: 421px) {
+  body,
+#blocpage,
+.entete,
+section,
+.imghead,
+#restau,
+footer {
+    width: 100%;
+  }
+
+  .entete {
+    display: flex;
+  }
+  .entete h1 {
+    align-self: center;
+  }
+
+  .entree,
+.plat,
+.dessert {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .piedpage {
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+  }
+  .piedpage p {
+    margin: 20px;
+  }
+}
+
+/*# sourceMappingURL=responsive_menu.css.map */
