@@ -97,6 +97,16 @@ section h2 i {
   padding-right: 10px;
   padding-left: 10px;
   margin-right: 10px;
+  animation: entree 200ms backwards;
+}
+.entree__card--1 {
+  animation-delay: 200ms;
+}
+.entree__card--2 {
+  animation-delay: 400ms;
+}
+.entree__card--3 {
+  animation-delay: 600ms;
 }
 .entree h3 {
   align-self: flex-start;
@@ -107,6 +117,17 @@ span {
   font-family: "Robotobold";
 }
 
+@keyframes entree {
+  0% {
+    visibility: hidden;
+  }
+  33% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 .prix {
   font-family: "Robotobold";
 }
@@ -127,12 +148,33 @@ span {
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 10px;
+  animation: plat 200ms backwards;
+}
+.plat__card--1 {
+  animation-delay: 200ms;
+}
+.plat__card--2 {
+  animation-delay: 400ms;
+}
+.plat__card--3 {
+  animation-delay: 600ms;
 }
 .plat h3 {
   align-self: flex-start;
   margin-left: 20px;
 }
 
+@keyframes plat {
+  0% {
+    visibility: hidden;
+  }
+  33% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 .dessert {
   display: flex;
   flex-direction: column;
@@ -149,14 +191,37 @@ span {
   padding-right: 10px;
   padding-left: 10px;
   margin-right: 10px;
+  animation: dessert 200ms backwards;
+}
+.dessert__card--1 {
+  animation-delay: 200ms;
+}
+.dessert__card--2 {
+  animation-delay: 400ms;
+}
+.dessert__card--3 {
+  animation-delay: 600ms;
 }
 .dessert h3 {
   align-self: flex-start;
   margin-left: 20px;
 }
 
-button {
+@keyframes dessert {
+  0% {
+    visibility: hidden;
+  }
+  33% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.btn {
   align-self: center;
+  text-align: center;
+  line-height: 50px;
   width: 218px;
   height: 50px;
   color: white;
@@ -166,6 +231,16 @@ button {
   font-weight: bold;
   border: none;
   margin-bottom: 20px;
+  line-height: 50px;
+  box-shadow: 4px 4px 15px grey;
+  line-height: 50px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 20px grey;
+  opacity: 0.9;
 }
 
 footer {

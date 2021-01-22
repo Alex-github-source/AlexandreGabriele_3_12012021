@@ -6,6 +6,7 @@ section,
 #restau,
 footer {
     width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 421px) {
@@ -17,6 +18,7 @@ section,
 #restau,
 footer {
     width: 100%;
+    height: auto;
   }
 
   .entete {
