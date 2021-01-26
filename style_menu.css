@@ -98,6 +98,15 @@ section h2 i {
   padding-left: 10px;
   margin-right: 10px;
   animation: entree 200ms backwards;
+  transition: transform 450ms;
+}
+.entree__card:hover .coche {
+  transform: scale(1);
+  transform: translateX(-20px);
+}
+.entree__card .coche {
+  width: 0px;
+  transform: scale(0);
 }
 .entree__card--1 {
   animation-delay: 200ms;
@@ -129,6 +138,7 @@ span {
   }
 }
 .prix {
+  margin-left: 150px;
   font-family: "Robotobold";
 }
 
@@ -190,7 +200,6 @@ span {
   margin-bottom: 20px;
   padding-right: 10px;
   padding-left: 10px;
-  margin-right: 10px;
   animation: dessert 200ms backwards;
 }
 .dessert__card--1 {
