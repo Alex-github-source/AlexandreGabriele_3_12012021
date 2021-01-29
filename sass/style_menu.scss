@@ -331,9 +331,10 @@ section{
     transform: scale(1);
     transition:transform 400ms;
         &:hover{
-            transform:scale(1.10);
+            cursor:pointer;
+            
             box-shadow:4px 4px 20px grey;
-            opacity: 0.9;
+            opacity: 0.8;
         }
 
 }
