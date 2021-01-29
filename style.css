@@ -45,7 +45,7 @@ body {
   z-index: 10002;
   content: "";
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   margin: -25px 0 0 -25px;
   border: 3px solid #f3f3f3;
@@ -136,7 +136,7 @@ input {
 .btn:hover {
   transform: scale(1);
   box-shadow: 4px 4px 20px grey;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 h2 {
@@ -251,7 +251,8 @@ b {
   fill: transparent;
   stroke: black;
   stroke-width: 40;
-  transition: all 950ms;
+  transition: fill 950ms;
+  transition-delay: fill 450ms;
 }
 .heart path:hover {
   stroke: none;

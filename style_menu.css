@@ -76,6 +76,14 @@ section h2 i {
   align-items: center;
 }
 
+.txt {
+  height: 40px;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .ent {
   display: flex;
   flex-direction: column;
@@ -94,19 +102,20 @@ section h2 i {
   border-radius: 20px;
   background-color: white;
   margin-bottom: 20px;
-  padding-right: 10px;
   padding-left: 10px;
   margin-right: 10px;
   animation: entree 200ms backwards;
-  transition: transform 450ms;
+}
+.entree__card:hover {
+  cursor: pointer;
 }
 .entree__card:hover .coche {
-  transform: scale(1);
-  transform: translateX(-20px);
+  animation: coche 900ms forwards ease-out;
+  transform-origin: right;
+  display: initial;
 }
-.entree__card .coche {
-  width: 0px;
-  transform: scale(0);
+.entree__card:hover .fa-check-circle {
+  animation: rota 1500ms backwards ease-in-out;
 }
 .entree__card--1 {
   animation-delay: 200ms;
@@ -126,6 +135,58 @@ span {
   font-family: "Robotobold";
 }
 
+.fa-check-circle {
+  margin-top: 25px;
+}
+
+.coche {
+  width: 0;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  display: none;
+}
+
+@keyframes rota {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes coche {
+  0% {
+    color: #F2F2F2;
+    width: 0;
+    display: none;
+    text-align: right;
+  }
+  25% {
+    color: #F2F2F2;
+    width: 0;
+    display: none;
+  }
+  50% {
+    color: #F2F2F2;
+    width: 0;
+    display: none;
+  }
+  75% {
+    color: #F2F2F2;
+    width: 0;
+    display: initial;
+  }
+  100% {
+    width: 80px;
+    color: white;
+    display: initial;
+    text-align: center;
+  }
+}
 @keyframes entree {
   0% {
     visibility: hidden;
@@ -138,8 +199,9 @@ span {
   }
 }
 .prix {
-  margin-left: 150px;
   font-family: "Robotobold";
+  align-self: flex-end;
+  margin-right: 10px;
 }
 
 .plat {
@@ -156,9 +218,19 @@ span {
   background-color: white;
   margin-bottom: 20px;
   padding-left: 10px;
-  padding-right: 10px;
   margin-right: 10px;
   animation: plat 200ms backwards;
+}
+.plat__card:hover {
+  cursor: pointer;
+}
+.plat__card:hover .coche {
+  animation: coche 900ms forwards ease-in-out;
+  transform-origin: right;
+  display: initial;
+}
+.plat__card:hover .fa-check-circle {
+  animation: rota 1500ms backwards ease-in-out;
 }
 .plat__card--1 {
   animation-delay: 200ms;
@@ -198,9 +270,20 @@ span {
   border-radius: 20px;
   background-color: white;
   margin-bottom: 20px;
-  padding-right: 10px;
+  margin-right: 10px;
   padding-left: 10px;
   animation: dessert 200ms backwards;
+}
+.dessert__card:hover {
+  cursor: pointer;
+}
+.dessert__card:hover .coche {
+  animation: coche 900ms forwards ease-in-out;
+  transform-origin: right;
+  display: initial;
+}
+.dessert__card:hover .fa-check-circle {
+  animation: rota 1500ms backwards ease-in-out;
 }
 .dessert__card--1 {
   animation-delay: 200ms;
