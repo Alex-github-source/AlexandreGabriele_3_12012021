@@ -86,6 +86,16 @@ h1 .logo {
   margin-bottom: 15px;
 }
 
+form {
+  position: relative;
+}
+
+.fa-map-marker-alt {
+  position: absolute;
+  left: 115px;
+  top: 15px;
+}
+
 #maRecherche {
   text-align: center;
   width: 100%;
