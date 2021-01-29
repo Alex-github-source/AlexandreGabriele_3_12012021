@@ -150,17 +150,13 @@ section{
 }
 
 @keyframes rota{
-    0%{
+    from{
 
        transform: rotate(0);
 
     }
-    50%{
-        transform:  rotate(180deg);
-
-
-    }
-    100%{
+     
+    to{
 
         transform:rotate(360deg);
 
@@ -175,17 +171,17 @@ section{
     }
     25%{
         color:#F2F2F2;
-        width: 0;
+        width: 80px;
         display: none;
     }
     50%{
         color:#F2F2F2;
-        width: 0;
+        width: 80px;
         display: none; 
     }
     75%{
         color:#F2F2F2;
-        width: 0;
+        width:80px;
         display: initial;
     }
     100%{
