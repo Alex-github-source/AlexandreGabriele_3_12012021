@@ -41,6 +41,10 @@ footer {
   .restau__card {
     margin-right: 20px;
   }
+
+  .fa-map-marker-alt {
+    right: 62%;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
