@@ -1,6 +1,8 @@
 $greylight:#F2F2F2;
 $pink:#FF79DA;
 $purple:#9356DC;
+$pastel:#99E2D0;
+
 @font-face{
     font-family: "Shrikhand";
     src:url("shrikhand/Shrikhand-Regular.otf");
@@ -14,6 +16,19 @@ $purple:#9356DC;
     font-family: "Robotobold";
     src:url("Roboto/Roboto-Black.ttf")
 }
+@keyframes loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);
+        visibility: hidden;
+        }
+     }
+
+@keyframes loading-back {
+    0% { transform: translate(0); }
+    100% { transform: translate(0);
+            visibility: hidden;
+            }
+     }
 body{
     font-family: "Roboto";
     width:100%;
@@ -30,19 +45,19 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-}
-.loading-spinner::before {
+
+        &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 10001;
     overflow: hidden;
-    background: #0b0b0b;
+    background: $greylight;
     opacity: 0.6;
     animation:loading-back 3s linear forwards;
 }
-.loading-spinner::after {
+        &::after {
     box-sizing: border-box;
     z-index: 10002;
     content: "";
@@ -51,25 +66,14 @@ body{
     left: 50%;
     margin: -25px 0 0 -25px;
     border: 3px solid #f3f3f3;
-    border-top: 3px solid #3498db;
+    border-top: 3px solid $purple;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     animation: loading 1s  linear 3 forwards;
 }
-@keyframes loading {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg);
-        visibility: hidden;
-        }
-     }
+}
 
-     @keyframes loading-back {
-        0% { transform: translate(0); }
-        100% { transform: translate(0);
-            visibility: hidden;
-            }
-         }
 
 h1{
     margin:0;
@@ -102,9 +106,7 @@ form{
     border-bottom: none;
     border-color: $greylight;
 }
-input{
-    font-family:FontAwesome;
-}
+
 .intro{
     display:flex;
     flex-direction: column;
@@ -165,6 +167,7 @@ b{
          p:first-child{
             color: white;
             position: relative;
+            top:20px;
             line-height: 11px;
             text-align: center;
             border: 1px solid grey;
@@ -185,7 +188,6 @@ b{
             width: 320px;
             height: 73px;
             padding-right: 10px;
-            margin-top: -5px;
             margin-left: -12px;
             padding-left: 20px;
             font-size: 17px;
@@ -257,11 +259,10 @@ b{
         fill:transparent;
         stroke: black;
         stroke-width: 40;
-        transition: fill 950ms;
-        transition-delay: fill 450ms;
+        transition: fill 950ms ease-in;
         &:hover{
             stroke:none;
-            fill:$purple;
+            fill:$purple ;
         }
     }
 }

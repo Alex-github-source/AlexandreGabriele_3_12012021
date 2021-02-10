@@ -10,52 +10,6 @@
   font-family: "Robotobold";
   src: url("Roboto/Roboto-Black.ttf");
 }
-body {
-  font-family: "Roboto";
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#blocpage {
-  width: 375px;
-}
-
-.loading-spinner {
-  cursor: progress;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.loading-spinner::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10001;
-  overflow: hidden;
-  background: #0b0b0b;
-  opacity: 0.6;
-  animation: loading-back 3s linear forwards;
-}
-
-.loading-spinner::after {
-  box-sizing: border-box;
-  z-index: 10002;
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  margin: -25px 0 0 -25px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: loading 1s linear 3 forwards;
-}
-
 @keyframes loading {
   0% {
     transform: rotate(0deg);
@@ -74,6 +28,50 @@ body {
     visibility: hidden;
   }
 }
+body {
+  font-family: "Roboto";
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#blocpage {
+  width: 375px;
+}
+
+.loading-spinner {
+  cursor: progress;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.loading-spinner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  overflow: hidden;
+  background: #F2F2F2;
+  opacity: 0.6;
+  animation: loading-back 3s linear forwards;
+}
+.loading-spinner::after {
+  box-sizing: border-box;
+  z-index: 10002;
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #9356DC;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: loading 1s linear 3 forwards;
+}
+
 h1 {
   margin: 0;
   display: flex;
@@ -105,10 +103,6 @@ form {
   border-right: none;
   border-bottom: none;
   border-color: #F2F2F2;
-}
-
-input {
-  font-family: FontAwesome;
 }
 
 .intro {
@@ -173,6 +167,7 @@ b {
 .fonctionnement p:first-child {
   color: white;
   position: relative;
+  top: 20px;
   line-height: 11px;
   text-align: center;
   border: 1px solid grey;
@@ -193,7 +188,6 @@ b {
   width: 320px;
   height: 73px;
   padding-right: 10px;
-  margin-top: -5px;
   margin-left: -12px;
   padding-left: 20px;
   font-size: 17px;
@@ -261,8 +255,7 @@ b {
   fill: transparent;
   stroke: black;
   stroke-width: 40;
-  transition: fill 950ms;
-  transition-delay: fill 450ms;
+  transition: fill 950ms ease-in;
 }
 .heart path:hover {
   stroke: none;

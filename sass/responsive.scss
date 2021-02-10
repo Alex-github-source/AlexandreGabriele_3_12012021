@@ -24,6 +24,12 @@
         width:100%;
         height: auto;
     }
+    .loading-spinner{
+       &::after{
+
+        top:25%;
+    }
+    }
     .intro{
         p{
             width: auto;

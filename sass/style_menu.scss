@@ -15,6 +15,60 @@ $pastel:#99E2D0;
     font-family: "Robotobold";
     src:url("Roboto/Roboto-Black.ttf")
 }
+@keyframes rota{
+    from{
+        transform:translateX(0);
+       transform: rotate(0);
+
+    }
+     
+    to{
+        transform:translateX(-50px);
+        transform:rotate(360deg);
+
+    }
+}
+@keyframes coche{
+    from{
+        color:$greylight;
+        width: 0;
+        display: none;
+        text-align: center;
+    }
+    to{
+        width: 80px;
+        color:$greylight;
+        display: initial;
+        text-align: center;
+    }
+}
+@keyframes entree{
+from{
+    visibility:hidden;
+}
+
+to{
+    visibility: visible;
+}    
+}
+@keyframes plat{
+    from{
+        visibility: hidden;
+    }
+
+    to{
+        visibility:visible;
+    }
+}
+@keyframes dessert{
+    from{
+        visibility: hidden;
+    }
+  
+    to{
+        visibility: visible;
+    }
+}
 body{
     font-family: "Roboto";
     width:100%;
@@ -103,25 +157,22 @@ section{
             margin-bottom: 20px;
             padding-left: 10px;
             margin-right: 10px;
-            animation:entree 200ms backwards;
+            animation:entree 800ms backwards;
                 &:hover{
                     cursor: pointer;
                      .coche{
                     animation: coche 900ms forwards ease-out;
                     transform-origin: right;
                     display: initial;
-                        
                             }
                     .fa-check-circle{
-                        animation:rota  1500ms backwards ease-in-out   ;
-                      
-                    }
-              
+                        animation:rota  1500ms backwards ease-in-out;
+                                    }
                         }
-            @for $i from 1 through 3 {
-                &--#{$i} {
+                @for $i from 1 through 4 {
+                    &--#{$i} {
                     animation-delay: 200ms * $i;
-                 }
+                    }
                 }
                
         }
@@ -129,11 +180,11 @@ section{
             align-self: flex-start;
             margin-left: 20px;
         }
-    }
+}
  
-  span{
-            font-family: "Robotobold";
-        }
+span{
+         font-family: "Robotobold";
+}
 
 
 .fa-check-circle{
@@ -148,61 +199,6 @@ section{
     display:none;
 
 }
-
-@keyframes rota{
-    from{
-
-       transform: rotate(0);
-
-    }
-     
-    to{
-
-        transform:rotate(360deg);
-
-    }
-}
-@keyframes coche{
-    0%{
-        color:#F2F2F2;
-        width: 0;
-        display: none;
-        text-align: right;
-    }
-    25%{
-        color:#F2F2F2;
-        width: 80px;
-        display: none;
-    }
-    50%{
-        color:#F2F2F2;
-        width: 80px;
-        display: none; 
-    }
-    75%{
-        color:#F2F2F2;
-        width:80px;
-        display: initial;
-    }
-    100%{
-        width: 80px;
-        color: white;
-        display: initial;
-        text-align: center;
-    }
-}
-@keyframes entree{
-0%{
-    visibility:hidden;
-}
-33%{
-    visibility: visible;
-}
-100%{
-    visibility: visible;
-}    
-}
-
 .prix{
     font-family: "Robotobold";
     align-self: flex-end;
@@ -223,7 +219,7 @@ section{
             margin-bottom: 20px;
             padding-left:10px;
             margin-right: 10px;
-            animation:plat 200ms backwards;
+            animation:plat 600ms backwards;
             &:hover{
                 cursor: pointer;
                  .coche{
@@ -249,17 +245,7 @@ section{
             margin-left: 20px;
         }
 }
-@keyframes plat{
-    0%{
-        visibility: hidden;
-    }
-    33%{
-        visibility: visible;
-    }
-    100%{
-        visibility:visible;
-    }
-}
+
 .dessert{
     display:flex;
     flex-direction: column;
@@ -274,7 +260,7 @@ section{
             margin-bottom: 20px;
             margin-right: 10px;
             padding-left: 10px;
-            animation:dessert 200ms backwards;
+            animation:dessert 600ms backwards;
             &:hover{
                 cursor: pointer;
                  .coche{
@@ -301,17 +287,7 @@ section{
             margin-left: 20px;
         }
 }
-@keyframes dessert{
-    0%{
-        visibility: hidden;
-    }
-    33%{
-        visibility: visible;
-    }
-    100%{
-        visibility: visible;
-    }
-}
+
 .btn{
     align-self: center;
     text-align: center;

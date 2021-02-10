@@ -20,6 +20,10 @@ footer {
     height: auto;
   }
 
+  .loading-spinner::after {
+    top: 25%;
+  }
+
   .intro p {
     width: auto;
   }
