@@ -152,7 +152,7 @@ section h2 i {
   margin-bottom: 20px;
   padding-left: 10px;
   margin-right: 10px;
-  animation: entree 800ms backwards;
+  animation: entree 1600ms backwards;
 }
 .entree__card:hover {
   cursor: pointer;
@@ -166,16 +166,16 @@ section h2 i {
   animation: rota 1500ms backwards ease-in-out;
 }
 .entree__card--1 {
-  animation-delay: 200ms;
-}
-.entree__card--2 {
   animation-delay: 400ms;
 }
+.entree__card--2 {
+  animation-delay: 800ms;
+}
 .entree__card--3 {
-  animation-delay: 600ms;
+  animation-delay: 1200ms;
 }
 .entree__card--4 {
-  animation-delay: 800ms;
+  animation-delay: 1600ms;
 }
 .entree h3 {
   align-self: flex-start;
@@ -219,7 +219,7 @@ span {
   margin-bottom: 20px;
   padding-left: 10px;
   margin-right: 10px;
-  animation: plat 600ms backwards;
+  animation: plat 1600ms backwards;
 }
 .plat__card:hover {
   cursor: pointer;
@@ -233,13 +233,13 @@ span {
   animation: rota 1500ms backwards ease-in-out;
 }
 .plat__card--1 {
-  animation-delay: 200ms;
-}
-.plat__card--2 {
   animation-delay: 400ms;
 }
+.plat__card--2 {
+  animation-delay: 800ms;
+}
 .plat__card--3 {
-  animation-delay: 600ms;
+  animation-delay: 1200ms;
 }
 .plat h3 {
   align-self: flex-start;
@@ -261,7 +261,7 @@ span {
   margin-bottom: 20px;
   margin-right: 10px;
   padding-left: 10px;
-  animation: dessert 600ms backwards;
+  animation: dessert 1600ms backwards;
 }
 .dessert__card:hover {
   cursor: pointer;
@@ -275,13 +275,13 @@ span {
   animation: rota 1500ms backwards ease-in-out;
 }
 .dessert__card--1 {
-  animation-delay: 200ms;
-}
-.dessert__card--2 {
   animation-delay: 400ms;
 }
+.dessert__card--2 {
+  animation-delay: 800ms;
+}
 .dessert__card--3 {
-  animation-delay: 600ms;
+  animation-delay: 1200ms;
 }
 .dessert h3 {
   align-self: flex-start;

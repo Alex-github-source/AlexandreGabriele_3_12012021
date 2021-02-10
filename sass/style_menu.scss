@@ -157,7 +157,7 @@ section{
             margin-bottom: 20px;
             padding-left: 10px;
             margin-right: 10px;
-            animation:entree 800ms backwards;
+            animation:entree 1600ms backwards;
                 &:hover{
                     cursor: pointer;
                      .coche{
@@ -171,7 +171,7 @@ section{
                         }
                 @for $i from 1 through 4 {
                     &--#{$i} {
-                    animation-delay: 200ms * $i;
+                    animation-delay: 400ms * $i;
                     }
                 }
                
@@ -219,7 +219,7 @@ span{
             margin-bottom: 20px;
             padding-left:10px;
             margin-right: 10px;
-            animation:plat 600ms backwards;
+            animation:plat 1600ms backwards;
             &:hover{
                 cursor: pointer;
                  .coche{
@@ -236,7 +236,7 @@ span{
                     }
             @for $i from 1 through 3 {
                 &--#{$i} {
-                    animation-delay: 200ms * $i;
+                    animation-delay: 400ms * $i;
                  }
                 }
         }
@@ -260,7 +260,7 @@ span{
             margin-bottom: 20px;
             margin-right: 10px;
             padding-left: 10px;
-            animation:dessert 600ms backwards;
+            animation:dessert 1600ms backwards;
             &:hover{
                 cursor: pointer;
                  .coche{
@@ -277,7 +277,7 @@ span{
                     }
             @for $i from 1 through 3 {
                 &--#{$i} {
-                    animation-delay: 200ms * $i;
+                    animation-delay: 400ms * $i;
                  }
                 }
 
